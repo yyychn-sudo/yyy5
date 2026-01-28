@@ -2532,7 +2532,7 @@ mod tests {
             MOUSE_TYPE_TRACKPAD,
             MOUSE_TYPE_MOVE_RELATIVE,
         ];
-
+        
         let mut seen = std::collections::HashSet::new();
         for t in types.iter() {
             assert!(seen.insert(*t), "Duplicate mouse type: {}", t);
